@@ -14,7 +14,6 @@ import java.util.ResourceBundle;
 import java.util.TreeMap;
 import java.util.stream.Collectors;
 
-import com.google.gson.JsonObject;
 import com.whitearl.stockpredictor.application.learning.MultiRegressor;
 import com.whitearl.stockpredictor.application.model.PredictionWindow;
 import com.whitearl.stockpredictor.application.model.Stock;
@@ -95,7 +94,6 @@ public class MainViewController implements Initializable
 			allData.putAll(predictions);
 			
 			ObservableList<String> datesX = FXCollections.observableArrayList(allData.keySet().stream().map(Date::toString).collect(Collectors.toList()));
-			List<Double> pricesY = new ArrayList<>(allData.values());
 			
 			CategoryAxis xAxis = new CategoryAxis();
 			xAxis.setCategories(datesX);
