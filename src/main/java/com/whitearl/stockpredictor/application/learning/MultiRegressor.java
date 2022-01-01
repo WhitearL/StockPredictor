@@ -48,7 +48,6 @@ public class MultiRegressor {
 				throw new NullPointerException();
 			} else {
 				this.model = builtModel;
-				System.out.println("model built!");
 			}
 			
 			cleanTempFiles();
@@ -157,5 +156,9 @@ public class MultiRegressor {
 
 	public Map<Date, Double> getCurrentData() {
 		return currentData;
+	}
+
+	public LinearRegression getModel() {
+		return model;
 	}
 }

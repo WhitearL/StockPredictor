@@ -24,8 +24,9 @@ public class StockPredictor extends Application {
     
 		    stage.setTitle(MAIN_VIEW_TITLE);
 		    stage.getIcons().add(new Image(classLoader.getResourceAsStream(MAIN_VIEW_ICON_FILE_PATH)));
-		    
+
 		    Scene scene = new Scene(root);
+		    
 		    stage.setScene(scene);
 		    stage.show();
 		   

@@ -12,5 +12,8 @@ public final class StockPredictorConstants {
 	public static final String FINNHUB_API_KEY = "c75p7p2ad3i9kvgaqe30";
 	public static final String FINNHUB_CANDLE_RESOLUTION_DAILY = "D";
 	public static final long UNIX_CONVERSION_LONG = 1000L;
+	
+	public static final int ML_SEED = 141;
+	public static final int ML_FOLDS = 3;
 
 }
