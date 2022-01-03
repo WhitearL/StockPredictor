@@ -1,11 +1,13 @@
 package com.whitearl.stockpredictor.application.utils;
 
+import static com.whitearl.stockpredictor.application.constants.StockPredictorConstants.DAYS_IN_YEAR;
 import static com.whitearl.stockpredictor.application.constants.StockPredictorConstants.FINNHUB_API_KEY;
 import static com.whitearl.stockpredictor.application.constants.StockPredictorConstants.FINNHUB_CANDLE_RESOLUTION_DAILY;
 import static com.whitearl.stockpredictor.application.constants.StockPredictorConstants.UNIX_CONVERSION_LONG;
 
 import java.io.IOException;
 import java.util.Arrays;
+import java.util.Calendar;
 import java.util.Date;
 import java.util.List;
 import java.util.Map;
@@ -22,7 +24,7 @@ public class DataFetcher {
 		this.dataClient = new FinnhubClient(FINNHUB_API_KEY);		
 	}
 
-	public Map<Date, Double> getHistoricPrices(String ticker, Date startDate, Date endDate) {
+	public Map<Date, Double> getPricesInTimeframe(String ticker, Date startDate, Date endDate) {
 		// TreeMap-- Automatic sorting of entries based on date.
 		Map<Date, Double> historicPrices = new TreeMap<>();
 		try {
@@ -46,5 +48,33 @@ public class DataFetcher {
 		}		
 
 		return historicPrices;
+	}
+	
+	public Map<Date, Double> getHistoricPrices(String ticker, int yearsBack) {		
+
+		Map<Date, Double> data = new TreeMap<>();
+
+		Date startDate = new Date();
+		Date endDate = new Date();
+		for (int i = 0; i < yearsBack; i++) {
+
+			startDate = modifyDateByDays(startDate, -DAYS_IN_YEAR);
+
+			data.putAll(getPricesInTimeframe(ticker, startDate, endDate));
+			
+			endDate = startDate;
+			endDate = modifyDateByDays(endDate, -1);
+			startDate = modifyDateByDays(startDate, -1);
+		}
+
+		return data;
+	}
+
+	public Date modifyDateByDays(Date date, int days) {
+		Calendar calendar = Calendar.getInstance();
+		calendar.setTime(date);
+		
+		calendar.add(Calendar.DATE, days);
+		return calendar.getTime();
 	}
 }

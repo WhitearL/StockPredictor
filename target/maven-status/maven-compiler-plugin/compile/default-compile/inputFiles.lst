@@ -1,1 +1,13 @@
-C:\Eclipse\stockpredictor\src\main\java\com\whitearl\stockpredictor\application\StockPredictor.java
+C:\Eclipse\StockPredictor\src\main\java\com\whitearl\stockpredictor\application\utils\StocksController.java
+C:\Eclipse\StockPredictor\src\main\java\com\whitearl\stockpredictor\application\controllers\TableDialog.java
+C:\Eclipse\StockPredictor\src\main\java\com\whitearl\stockpredictor\application\learning\modelcontrollers\WEKAModelController.java
+C:\Eclipse\StockPredictor\src\main\java\com\whitearl\stockpredictor\application\learning\modelcontrollers\LinearRegressionController.java
+C:\Eclipse\StockPredictor\src\main\java\com\whitearl\stockpredictor\application\utils\DataFetcher.java
+C:\Eclipse\StockPredictor\src\main\java\com\whitearl\stockpredictor\application\model\Stock.java
+C:\Eclipse\StockPredictor\src\main\java\com\whitearl\stockpredictor\application\model\PredictionWindow.java
+C:\Eclipse\StockPredictor\src\main\java\com\whitearl\stockpredictor\application\constants\StockPredictorConstants.java
+C:\Eclipse\StockPredictor\src\main\java\com\whitearl\stockpredictor\application\learning\modelcontrollers\ARIMAModelController.java
+C:\Eclipse\StockPredictor\src\main\java\com\whitearl\stockpredictor\application\controllers\MainViewController.java
+C:\Eclipse\StockPredictor\src\main\java\com\whitearl\stockpredictor\application\StockPredictor.java
+C:\Eclipse\StockPredictor\src\main\java\com\whitearl\stockpredictor\application\learning\modelcontrollers\ModelController.java
+C:\Eclipse\StockPredictor\src\main\java\com\whitearl\stockpredictor\application\model\StockCandle.java

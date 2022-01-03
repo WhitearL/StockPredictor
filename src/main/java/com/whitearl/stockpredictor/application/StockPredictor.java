@@ -5,12 +5,15 @@ import static com.whitearl.stockpredictor.application.constants.StockPredictorCo
 import static com.whitearl.stockpredictor.application.constants.StockPredictorConstants.MAIN_VIEW_TITLE;
 
 import java.io.IOException;
+
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.image.Image;
 import javafx.stage.Stage;
+
+
 
 public class StockPredictor extends Application {
 	

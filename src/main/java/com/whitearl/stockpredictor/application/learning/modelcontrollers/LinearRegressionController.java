@@ -1,4 +1,4 @@
-package com.whitearl.stockpredictor.application.learning;
+package com.whitearl.stockpredictor.application.learning.modelcontrollers;
 
 
 import java.io.BufferedWriter;
@@ -17,7 +17,7 @@ import weka.core.converters.ArffSaver;
 import weka.core.converters.CSVLoader;
 import weka.core.converters.ConverterUtils.DataSource;
 
-public class MultiRegressor {
+public class LinearRegressionController {
 			
 	private static final String CSV_TEMP_FILE_NAME = "tempData.csv";
 	private static final String ARFF_TEMP_FILE_NAME = "tempData.arff";
@@ -29,14 +29,14 @@ public class MultiRegressor {
 	private LinearRegression model;
     private Map<Date, Double> currentData;
 
-    public MultiRegressor(String stockTicker, Date trainingBackDate, Date predictionStartDate) {
+    public LinearRegressionController(String stockTicker) {
 		try {
 
 			cleanTempFiles();
 			
 			DataFetcher df = new DataFetcher();
 		
-			currentData = df.getHistoricPrices(stockTicker, trainingBackDate, predictionStartDate);
+			currentData = df.getHistoricPrices(stockTicker, 5);
 				
 			convertMaptoARFF(currentData);
 			

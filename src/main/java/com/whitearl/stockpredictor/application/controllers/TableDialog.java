@@ -3,6 +3,7 @@ package com.whitearl.stockpredictor.application.controllers;
 import static com.whitearl.stockpredictor.application.constants.StockPredictorConstants.MAIN_VIEW_ICON_FILE_PATH;
 
 import java.util.Map;
+
 import javafx.geometry.Insets;
 import javafx.scene.Group;
 import javafx.scene.Scene;

@@ -28,6 +28,58 @@
 		    <artifactId>weka-stable</artifactId>
 		    <version>3.8.5</version>
 		</dependency>
+		<dependency>
+		    <groupId>com.github.jbytecode</groupId>
+		    <artifactId>RCaller</artifactId>
+		    <version>4.0.1</version>
+		</dependency>
+          <dependency>
+                  <groupId>org.openjfx</groupId>
+                  <artifactId>javafx-controls</artifactId>
+                  <version>11</version>
+          </dependency>
+                    <dependency>
+                  <groupId>org.openjfx</groupId>
+                  <artifactId>javafx-fxml</artifactId>
+                  <version>11</version>
+          </dependency>
 	</dependencies>
+
+<build>
+        <plugins>
+                <plugin>
+                        <groupId>org.apache.maven.plugins</groupId>
+                        <artifactId>maven-compiler-plugin</artifactId>
+                        <version>3.8.0</version>
+                        <configuration>
+                                <release>10</release>
+                                 <!--  or 11  -->
+                         </configuration>
+                 </plugin>
+                 <plugin>
+                         <groupId>org.codehaus.mojo</groupId>
+                         <artifactId>exec-maven-plugin</artifactId>
+                         <version>1.2.1</version>
+                         <executions>
+                                 <execution>
+                                         <goals>
+                                                 <goal>java</goal>
+                                         </goals>
+                                 </execution>
+                         </executions>
+                         <configuration>
+                                 <mainClass>com.whitearl.stockpredictor.application.StockPredictor</mainClass>
+                         </configuration>
+                 </plugin>
+         </plugins>
+ </build>
+
+	<repositories>
+    	<repository>
+    		<id>bedatadriven</id>
+    		<name>bedatadriven public repo</name>
+    		<url>https://nexus.bedatadriven.com/content/groups/public/</url>
+    	</repository>
+	</repositories>
 
 </project>
