@@ -1,7 +1,8 @@
+C:\Eclipse\StockPredictor\src\main\java\com\whitearl\stockpredictor\application\model\Model.java
 C:\Eclipse\StockPredictor\src\main\java\com\whitearl\stockpredictor\application\utils\StocksController.java
 C:\Eclipse\StockPredictor\src\main\java\com\whitearl\stockpredictor\application\controllers\TableDialog.java
 C:\Eclipse\StockPredictor\src\main\java\com\whitearl\stockpredictor\application\learning\modelcontrollers\WEKAModelController.java
-C:\Eclipse\StockPredictor\src\main\java\com\whitearl\stockpredictor\application\learning\modelcontrollers\LinearRegressionController.java
+C:\Eclipse\StockPredictor\src\main\java\com\whitearl\stockpredictor\application\learning\modelcontrollers\LinearRegressionModelController.java
 C:\Eclipse\StockPredictor\src\main\java\com\whitearl\stockpredictor\application\utils\DataFetcher.java
 C:\Eclipse\StockPredictor\src\main\java\com\whitearl\stockpredictor\application\model\Stock.java
 C:\Eclipse\StockPredictor\src\main\java\com\whitearl\stockpredictor\application\model\PredictionWindow.java

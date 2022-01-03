@@ -3,9 +3,9 @@ package com.whitearl.stockpredictor.application.learning.modelcontrollers;
 import weka.classifiers.AbstractClassifier;
 import weka.core.Instance;
 
-public abstract class WEKAModelController {
+public abstract class WEKAModelController extends ModelController{
 	
-	public abstract void predict(Instance instance);
+	public abstract double predict(Instance instance);
 	protected abstract AbstractClassifier buildModel();
 	
 }
