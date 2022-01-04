@@ -1,0 +1,13 @@
+com\whitearl\stockpredictor\application\controllers\TableDialog.class
+com\whitearl\stockpredictor\application\learning\modelcontrollers\ModelController.class
+com\whitearl\stockpredictor\application\model\PredictionWindow.class
+com\whitearl\stockpredictor\application\constants\StockPredictorConstants.class
+com\whitearl\stockpredictor\application\learning\modelcontrollers\LinearRegressionModelController.class
+com\whitearl\stockpredictor\application\utils\StocksController.class
+com\whitearl\stockpredictor\application\controllers\MainViewController.class
+com\whitearl\stockpredictor\application\learning\modelcontrollers\ARIMAModelController.class
+com\whitearl\stockpredictor\application\StockPredictor.class
+com\whitearl\stockpredictor\application\learning\modelcontrollers\WEKAModelController.class
+com\whitearl\stockpredictor\application\model\Stock.class
+com\whitearl\stockpredictor\application\model\Model.class
+com\whitearl\stockpredictor\application\utils\DataFetcher.class
