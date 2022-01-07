@@ -215,6 +215,7 @@ public class LinearRegressionModelController extends WEKAModelController {
 			// Build the classifier for the model
 			LinearRegression builtModel = new LinearRegression();
 			builtModel.buildClassifier(dataSet);
+			
 			return builtModel;
 		} catch (Exception e) {
 			// Weka's Java library, unhelpfully, does not throw specific exceptions.
@@ -285,7 +286,10 @@ public class LinearRegressionModelController extends WEKAModelController {
 			
 		} catch (IOException e) {
 			// Problem with the files, show error message
-			new Alert(AlertType.ERROR, "Could not write the dataset to CSV: " + System.lineSeparator() + e, ButtonType.OK).showAndWait();
+			new Alert(AlertType.ERROR, 
+					"Could not write the dataset to CSV: " 
+							+ System.lineSeparator() + e, ButtonType.OK)
+								.showAndWait();
 		}
     }
     
@@ -317,7 +321,10 @@ public class LinearRegressionModelController extends WEKAModelController {
 	               
         } catch (Exception e) {
         	// Show error message
-        	new Alert(AlertType.ERROR, "Could not convert the dataset to ARFF: " + System.lineSeparator() + e, ButtonType.OK).showAndWait();
+        	new Alert(AlertType.ERROR, 
+        			"Could not convert the dataset to ARFF: " 
+        					+ System.lineSeparator() + e, ButtonType.OK)
+        						.showAndWait();
         }
     }
 

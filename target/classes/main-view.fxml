@@ -106,9 +106,9 @@
                   </AnchorPane>
                </children>
             </GridPane>
-            <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="2">
+            <AnchorPane maxHeight="32.0" prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="2">
                <children>
-                  <Label alignment="CENTER" layoutX="114.0" layoutY="10.0" prefHeight="32.0" prefWidth="600.0" text="Note: Weekends are excluded from prediction window to account for Stock Market closures." AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                  <Label alignment="CENTER" layoutX="114.0" layoutY="10.0" maxHeight="32.0" prefHeight="32.0" prefWidth="600.0" text="Note: Weekends are excluded from prediction window to account for Stock Market closures." AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
                </children>
             </AnchorPane>
          </children>

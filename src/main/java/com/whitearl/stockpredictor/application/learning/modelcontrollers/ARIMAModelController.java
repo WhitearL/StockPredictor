@@ -126,7 +126,7 @@ public class ARIMAModelController extends ModelController {
 		// Add the R Library 'forecast' for time series forecasting from an ARIMA model
 		code.R_require("forecast");
 		// Build the model
-		code.addRCode("model <- auto.arima(ts(stockClosePrices, frequency=100),D=1)"); 
+		code.addRCode("model <- auto.arima(ts(stockClosePrices, frequency=365),D=1)"); 
 		// Forecast the next x days, x being the prediction window the user chose
 		code.addRCode("forecastedData <- forecast(model ,h="+ this.predictionWindow.getInDays() + ")");
 		// Get the mean forecasted values and the accuracy matrics from the forecasted results

@@ -90,8 +90,13 @@ public class DataFetcher {
 				// Get the data and add to the map
 				data.putAll(getPricesInTimeframe(ticker, startDate, endDate));
 			} catch (IOException e) {
-				// Error downloading data, show error message, break from loop and return empty map.
-				new Alert(AlertType.ERROR, "There was a problem downloading the data from Finnhub: " + System.lineSeparator() + e, ButtonType.OK).showAndWait();
+				/* Error downloading data, 
+				 * show error message, 
+				 * break from loop and return empty map.*/
+				new Alert(AlertType.ERROR, 
+						"There was a problem downloading the data from Finnhub: " 
+								+ System.lineSeparator() 
+									+ e, ButtonType.OK).showAndWait();
 				return new TreeMap<>();
 			}
 			

@@ -1,0 +1,3 @@
+com\whitearl\stockpredictor\application\learning\controllers\ARIMAModelControllerTest.class
+com\whitearl\stockpredictor\application\learning\controllers\LinearRegressionModelControllerTest.class
+com\whitearl\stockpredictor\application\utils\StocksControllerTest.class
